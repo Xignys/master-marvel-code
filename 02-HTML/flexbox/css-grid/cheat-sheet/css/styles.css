@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+
+:root {
+  --main-color: #b8001f;
+  --second-color: #00139f;
+  --text-light: #ffffff;
+}
+
+.grid {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 70px 70px;
+}
+
+.grid > div {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.grid-two {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  grid-template-rows: 70px 70px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.grid-two > div {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.grid-three {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  justify-items: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.grid-three > div {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.grid-four {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 20% 30% max-content;
+  grid-template-rows:100px max-content;
+  height: 30vh;
+}
+
+.grid-four > div {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.grid-five {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-rows:100px max-content;
+    height: 30vh;
+  }
+  
+  .grid-five > div {
+    background-color: var(--second-color);
+    color: white;
+  }
+  
+  .grid-six {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows:100px max-content;
+    height: 30vh;
+  }
+  
+  .grid-six > div {
+    background-color: var(--second-color);
+    color: white;
+  }
+
+  .grid-seven {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 30px 30px;
+  }
+  
+  .grid-seven > div {
+    background-color: var(--second-color);
+    color: white;
+  }
+
+  .grid-seven > div[class^="element"]:hover {
+    background-color:darksalmon;
+  }
+
+  .grid-seven > div.element1 {
+    background-color: teal;
+    justify-self: end;
+    align-self: start;
+  }
+  
+  .grid-seven > div.element2 {
+    background-color: black;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .grid-seven > div.element3 {
+    background-color: purple;
+    justify-self: start;
+    align-self: end;
+  }
+
+  .grid-seven > div.element4 {
+    background-color: black;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .grid-seven > div.element5 {
+    background-color: purple;
+    justify-self: start;
+    align-self: end;
+  }
+
+  .grid-seven > div.element6 {
+    background-color: purple;
+    justify-self: end;
+    align-self: center;
+  }
