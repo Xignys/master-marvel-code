@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="cuerpo">
+    <header>
+      <h1>Ejercicio para Modificar el DOM</h1>
+    </header>
+
+    <main>
+      <div>
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" " id="nombre">
+        <a href="#" onclick="capturaNombre()">Mostrar Nombre</a>
+      </div>
+      <br>
+      <div>
+          <label for="fecha">Selecciona tu fecha de nacimiento</label>
+          <input type="date" name="" id="fecha">
+          <button id="calcular">Calcular Edad</button>
+          <h4 id="edad"></h4>
+      </div>
+    </main>
+
+    <footer>
+        <a id="color" href="#" onclick="cambiarColor()">Cambiar color</a>
+    </footer>
+    <script src="..//09-domJS/js/index.js"></script>
+  </body>
+
+  </html>
