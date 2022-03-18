@@ -1,0 +1,20 @@
+Escribir un programa en pseudocodigo
+Que indique si un numero es dado es para o impar
+
+Inicio
+
+Proceso definir si (a) es par o impar;
+
+    variable = a;
+
+    InicioProceso
+        Escribir = "Digite un numero: (a)";
+        Leer: a ;
+
+        Si (a es divisible entre 2 y no tiene residuo) Entonces
+            Imprimir = "(a) es un numero par"
+        Sino
+            Imprimir = "(a) es un numero impar"
+    FinProceso
+
+Fin
